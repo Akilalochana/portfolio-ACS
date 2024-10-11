@@ -1,5 +1,8 @@
 body{
     margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 h1{
@@ -8,14 +11,17 @@ h1{
 
 .navbar ul{
     list-style-type: none;
-    background-color: #F0FFFF;
+    background-color: #fcffff;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
+    justify-content: space-between;
+    
 }
 
 li{
     float: left;
+    
 }
 
 .navbar a{
