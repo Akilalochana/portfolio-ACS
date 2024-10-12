@@ -1,48 +1,49 @@
-body{
-    margin: 0px;
+*{
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'IBM Plex Mono', monospace;
+    background-color: white;
 }
 
-h1{
-    text-align: center;
-}
-
-.navbar ul{
-    list-style-type: none;
-    background-color: #fcffff;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+header{
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
     
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.myName{
+    color: #000000;
 }
 
-li{
-    float: left;
-    
+.navLinks{
+    list-style: none;
 }
 
-.navbar a{
-    color: rgb(0, 0, 0);
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navLinks li a{
+    transition: all 0.3s ease 0s;
     text-decoration: none;
-    padding: 14px 16px;
-    display: block;
-    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
 }
 
-.navbar a.active{
-    background-color: #FFE4E1;
-    color: white;
-}
-.navbar a:hover:not(.active){
-    background-color: #FFE4B5;
-    color: rgb(131, 8, 8);
+.navLinks li:first-child a {
+    
+    color: #20cf43;
 }
 
 
 
+.navLinks li a:hover{
+    color: #20cf43;
+}
 
 
 
@@ -59,13 +60,6 @@ li{
     animation-delay: 1s;
 }
 
-@keyframes example {
-    0%   {background-color:rgb(182, 175, 175); left:0px; top:0px;}
-   
-    50%  {background-color:rgb(13, 13, 13); left:1470px; top:0px;}
-  
-    100% {background-color:rgb(137, 133, 133); left:0px; top:0px;}
-  }
 
 
 
@@ -75,91 +69,4 @@ li{
 
 
 
-
-/* ---------------------about------------------- */
-.aboutme-title {
-    font-size: 40px;
-}
-
-.row {
-    display: flex;
-    /* text-align: center; */
-    justify-content: space-between;
-    width: 90%;
-    gap: 50px;
-    margin-left: 50px;
-}
-
-.col {
-    display: flex;
-    width: 50%;
-}
-
-.top-header {
-    text-align: center;
-    margin-bottom: 5em;
-
-}
-
-.top-header h1 {
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 10px;
-}
-
-.top-header span {
-    color: #999;
-}
-
-.h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 15px;
-}
-
-.about-info {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-block: 30px 70px;
-    padding-inline: 20px;
-    width: 100%;
-    background: var(--extra-light);
-    box-shadow: 1px 8px 10px 2px var(--text-light);
-    border-radius: 20px;
-}
-
-.downloadBtn {
-    background-color: var(--primary-color);
-    color: #ffffff;
-}
-
-.downloadBtn:hover {
-    background-color: var(--primary-color-dark);
-}
-
-/* --------------------skill box ------------ */
-.skill-box {
-    margin: 10px;
-}
-
-.skills-header {
-    margin-bottom: 30px;
-}
-
-.skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skill-list span {
-    font-size: 14px;
-    background: var(--primary-color-dark);
-    color: var(--extra-light);
-    padding: 2px 10px;
-    border-radius: 5px;
-}
 
