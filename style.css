@@ -10,9 +10,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;
-    
+    padding: 25px 50px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    
 }
 .myName{
     color: #000000;
@@ -27,7 +27,7 @@ header{
     padding: 0px 20px;
 }
 .navLinks li a{
-    transition: all 0.3s ease 0s;
+    transition: .5s;
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
@@ -44,6 +44,176 @@ header{
 .navLinks li a:hover{
     color: #20cf43;
 }
+
+/* ------------------HOME------------------ */
+/* section{
+    display: flex;
+} */
+.homePage{
+    /* display: flex; */
+    align-items: center;
+    /* height: 100vh; */
+    padding: 60px 7% 0;
+    margin-top: 50px;
+    
+}
+
+.homeInfo h1{
+    font-size: 55px;
+}
+
+.homeInfo h2{
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.homeInfo p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+    width: 750px;
+}
+
+.homeInfo .btnAndScl{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d;
+    color: #1f242d;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .5s;
+}
+.btn:hover{
+    background: transparent;
+    color:#000000;
+    box-shadow: none;
+}
+
+.btnAndScl .socialMedia{
+    padding: 20px;
+}
+
+.btnAndScl .socialMedia a{
+    display: inline-flex;
+    text-decoration: none;
+    padding: 8px ;
+    border: 2px solid #34780f;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #3e8717;
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.btnAndScl .socialMedia i{
+    background-color: white;
+}
+.btnAndScl .socialMedia a:hover{
+    background-color: #7cf03d;
+    color: rgb(59, 57, 57);
+    box-shadow: 0 0 10px #7cf03d;
+}
+.btnAndScl .socialMedia a:hover{
+    i{
+        background-color: #7cf03d;
+    }
+}
+/* .btnAndScl .socialMedia a i:hover{
+    background-color: #7cf03d; 
+} */
+
+
+
+
+.homeImg .imgBox{
+    width: 30vw;
+    height: 30vw;
+    background: #7ff697;
+    border-radius: 50%;
+    margin-left: 900px;
+    margin-top: -410px;
+    position: relative;
+    animation-name: lightCircle;
+    animation-duration: 50s;
+    /* animation: imgFloat 4s ease-in-out infinite; */
+}
+
+
+.homeImg .imgBox .imgItem img{
+    width: 452px;
+    position: absolute;
+    /* width: min(25rem, 90%); */
+    border-radius: 100%;
+    margin-left: 5px;
+    margin-top: 6px;
+    animation: imgFloat 4s ease-in-out infinite;
+}
+
+@keyframes lightCircle{
+    0%   {background-color: rgb(151, 245, 19);}
+    5%  {background-color: rgb(239, 225, 20);}
+    10%  {background-color: rgb(245, 147, 49);}
+    15% {background-color: rgb(239, 56, 172);}
+    20% {background-color: rgb(1, 255, 1);}
+    25% {background-color: rgb(0, 203, 0);}
+    30% {background-color: rgb(0, 160, 0);}
+    35% {background-color: rgb(0, 99, 0);}
+    40% {background-color: rgb(94, 128, 0);}
+    45% {background-color: rgb(153, 187, 0);}
+    50% {background-color: rgb(234, 255, 0);}
+    55%   {background-color: rgb(186, 0, 0);}
+    60%  {background-color: rgb(192, 51, 0);}
+    65%  {background-color: rgb(208, 194, 0);}
+    70% {background-color: green;}
+    75% {background-color: rgb(1, 255, 1);}
+    80% {background-color: rgb(0, 203, 0);}
+    85% {background-color: rgb(0, 160, 0);}
+    90% {background-color: rgb(0, 99, 0);}
+    95% {background-color: rgb(94, 128, 0);}
+    100% {background-color: rgb(153, 187, 0);}
+  
+}
+@keyframes imgFloat {
+    50% {
+        transform: translateY(10px);
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
