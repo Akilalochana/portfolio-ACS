@@ -6,6 +6,25 @@
     background-color: white;
 }
 
+/* .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite, fadeOut 2s forwards;
+    opacity: 1;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+} */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -188,8 +207,10 @@ header{
 }
 
 
-
-
+/* -----------------------ABOUT----------------------------------------- */
+.container1{
+    display: flex;
+}
 
 
 
