@@ -174,6 +174,10 @@ header{
     margin-top: 6px;
     animation: imgFloat 4s ease-in-out infinite;
 }
+.resImg{
+    width: 100%;
+    height: auto;
+}
 
 @keyframes lightCircle{
     0%   {background-color: rgb(151, 245, 19);}
@@ -208,10 +212,59 @@ header{
 
 
 /* -----------------------ABOUT----------------------------------------- */
-.container1{
-    display: flex;
+
+#aboutMe{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 50px;
 }
 
+.about{
+    display: flex;
+    column-gap: 25px;
+    padding: 30px 40px;
+}
+
+.imgSection{
+    width: 40%;
+}
+
+.descriptionMe{
+    height: 60%;
+}
+
+.imgSection .aboutImg img {
+    border-radius: 30px;
+}
+
+.descriptionMe .nowDes{
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.schoolDetails{
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.imgSection,.descriptionMe{
+    margin-bottom: 40px;
+}
+
+.descriptionMe .schoolDes .schoolImg img{
+    width: 100px;
+    height: auto;
+}
+
+.descriptionMe .schoolDes .schoolImg{
+    background-color: #888282;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    width: 400px;
+}
 
 
 
