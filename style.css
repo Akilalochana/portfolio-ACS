@@ -132,7 +132,7 @@ header{
 }
 
 .btnAndScl .socialMedia i{
-    background-color: white;
+    /* background-color: white; */
 }
 .btnAndScl .socialMedia a:hover{
     background-color: #7cf03d;
@@ -375,6 +375,9 @@ header{
 
 
 /* ---------------------------------------------- */
+.projects{
+    margin-bottom: 100px;
+}
 .projectTitle{
     text-align: center;
     font-size: 40px;
@@ -443,8 +446,14 @@ header{
     color: #6b7280;
 }
 
-
-
+/* --------BOLG------- */
+aside{
+    width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  background-color: rgb(231, 37, 37);
+}
 
 
 
