@@ -457,11 +457,62 @@ aside{
 
 
 
+/* ---------------------------FOOTER-------------- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    background: var(--extra-light);
+    padding-block: 40px 60px;
+    background: rgb(246, 233, 211);
+}
+
+.top-footer p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.middle-footer .footer-menu {
+    display: flex;
+}
+
+.footer-menu-list {
+    list-style: none;
+}
+
+.footer-menu-list a {
+    font-weight: 500;
+    margin-inline: 20px;
+}
+
+.footer-social--icon {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    color: var(--primary-color-dark);
 
 
+}
 
 
-
+/* -------------------meadia------------------- */
+@media(max-width:821px){
+    .homeImg .imgBox {
+        width: 30vw;
+        height: 30vw;
+        background: #7ff697;
+        border-radius: 50%;
+        margin-left: 100px;
+        margin-top: -410px;
+        position: absolute;
+        animation-name: lightCircle;
+        animation-duration: 50s;
+        /* animation: imgFloat 4s ease-in-out infinite; */
+    }
+}
 
 
 
