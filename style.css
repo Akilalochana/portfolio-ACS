@@ -501,17 +501,66 @@ footer {
 /* -------------------meadia------------------- */
 @media(max-width:821px){
     .homeImg .imgBox {
-        width: 30vw;
-        height: 30vw;
+        width: 55vw;
+        height: 55vw;
         background: #7ff697;
         border-radius: 50%;
         margin-left: 100px;
-        margin-top: -410px;
+        margin-top: 40px;
         position: absolute;
         animation-name: lightCircle;
         animation-duration: 50s;
         /* animation: imgFloat 4s ease-in-out infinite; */
     }
+
+    .aboutContainer {
+        max-width: 1300px;
+        margin: auto;
+        padding: 120px 20px;
+        margin-top: 500px;
+    }
+}
+
+@media(max-width:668px){
+    .homeInfo p {
+        font-size: 16px;
+        margin: 10px 0 25px;
+        width: 450px;
+    }
+
+    .homeImg .imgBox {
+        width: 85vw;
+        height: 85vw;
+        background: #7ff697;
+        border-radius: 50%;
+        margin-left: 100px;
+        margin-top: 40px;
+        position: absolute;
+        animation-name: lightCircle;
+        animation-duration: 50s;
+        /* animation: imgFloat 4s ease-in-out infinite; */
+    }
+
+    .homeImg .imgBox .imgItem img {
+        width: 350px;
+        position: absolute;
+        /* width: min(25rem, 90%); */
+        border-radius: 100%;
+        margin-left: 5px;
+        margin-top: 6px;
+        animation: imgFloat 4s ease-in-out infinite;
+    }
+
+    .projectContainer {
+        display: flex;
+        /* width: 100%; */
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 0px 50px;
+    }
+
+    
 }
 
 
