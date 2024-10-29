@@ -387,7 +387,7 @@ header{
 .projectContainer{
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
     padding: 0px 50px;
@@ -537,15 +537,41 @@ footer {
 }
 
 @media(max-width:668px){
+
+    .homePage {
+        /* display: flex; */
+        align-items: center;
+        /* height: 100vh; */
+        padding: 10px 7% 0;
+        margin-top: 50px;
+    }
+
+    .navLinks li a {
+       display: none;
+    }
+
+
     .homeInfo p {
         font-size: 16px;
         margin: 10px 0 25px;
-        width: 450px;
+        width: 330px;
+    }
+
+    .btnAndScl .socialMedia a {
+        display: inline-flex;
+        text-decoration: none;
+        padding: 4px;
+        border: 2px solid #34780f;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #3e8717;
+        margin: 0 8px;
+        transition: .5s;
     }
 
     .homeImg .imgBox {
-        width: 85vw;
-        height: 85vw;
+        width: 55vw;
+        height: 55vw;
         background: #7ff697;
         border-radius: 50%;
         margin-left: 100px;
@@ -557,7 +583,7 @@ footer {
     }
 
     .homeImg .imgBox .imgItem img {
-        width: 350px;
+        width: 250px;
         position: absolute;
         /* width: min(25rem, 90%); */
         border-radius: 100%;
@@ -566,6 +592,13 @@ footer {
         animation: imgFloat 4s ease-in-out infinite;
     }
 
+
+    .aboutContainer {
+        max-width: 1300px;
+        margin: auto;
+        padding: 20px 20px;
+        margin-top: 300px;
+    }
     .projectContainer {
         display: flex;
         /* width: 100%; */
