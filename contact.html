@@ -29,37 +29,30 @@
         </nav>
     </header>
 
-    <section class="homePage">
-        <div class="homeInfo">
-            <h1>Akila Lochana</h1>
-            <h2>I'm a Full-Stack Developer</h2>
-            <p>I’m Akila Lochana, a passionate Full-Stack Developer with a strong foundation in both front-end and back-end technologies. With expertise in HTML5, CSS3, JavaScript, and frameworks like React and Node.js, I specialize in creating dynamic, responsive web applications. My skill set also includes database management, API integration, and cloud services, making me well-versed in building scalable and efficient solutions.</p>
-        </div>
-        <div class="btnAndScl">
-            <a href="#" class="btn">Download CV</a>
-        
-            <div class="socialMedia">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class="bx bxl-github"></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-youtube' ></i></a>
-                <a href="#"><i class='bx bxl-facebook' ></i></a>
-            </div>
-        </div>
-    </section>
 
-    <div class="homeImg">
-        <div class="imgBox">
-            <div class="imgItem">
-                <img src="images/photo_2024-06-14_21-17-11.jpg" alt="" class="resImg">
-            </div>
-        </div>
-    </div>
+    <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+    
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+          <input type="submit" value="Submit">
+        </form>
+      </div>
 
 
-
-
-    <!-- ----------------------------FOOTER----------------------- -->
 
     <footer>
         <div class="topFooter">
