@@ -6,6 +6,8 @@
     background-color: white;
 }
 
+
+
 /* .loader {
     position: absolute;
     top: 50%;
@@ -446,13 +448,71 @@ header{
     color: #6b7280;
 }
 
-/* --------BOLG------- */
+/* -------------------------BOLG------- */
+#blogBody{
+    background-color: #f4f4f4;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #f4f4f4;
+}
+
+article{
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 aside{
-    width: 30%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
-  background-color: rgb(231, 37, 37);
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article h2, h3{
+    color: #444;
+}
+
+article img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+article .articleDate{
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.authorImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+aside ul{
+    padding-left: 20px;
+}
+aside a{
+    color: #0066cc;
+    text-decoration: none;
+}
+aside a:hover{
+    text-decoration: underline;
 }
 
 
@@ -608,6 +668,13 @@ footer {
         padding: 0px 50px;
     }
 
+    /* ----------BLOG-------- */
+    main{
+        flex-direction: column;
+    }
+    aside{
+        margin-left: 0;
+    }
     
 }
 
