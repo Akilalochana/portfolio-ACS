@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head> 
-<body>
+<body id="contactBody">
     <!-- <div class="loader"></div> -->
     <header>
         <div class="myName"><h1>Akila Lochana.</h1></div>
@@ -30,28 +30,32 @@
     </header>
 
 
-    <div class="container">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-    
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    
-          <input type="submit" value="Submit">
+    <main>
+        <form id="contactForm">
+            <div class="formGroup">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="formGroup">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="formGroup">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
         </form>
-      </div>
 
+        <aside>
+            <h2>Contact Information</h2>
+            <ul>
+                <li><a href="mailto:akilalochana7@gmail.com">akilalochana7@gmail.com</a></li>
+                <li>Tele : 0778823415</li>
+                <li>wellawaththa, Colombo, Srilanka</li>
+            </ul>
+        </aside>
+    </main>
 
 
     <footer>

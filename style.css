@@ -514,8 +514,61 @@ aside a{
 aside a:hover{
     text-decoration: underline;
 }
+/* ----------------------CONTACT------------------- */
+#contactBody{
+    background-color: #f4f4f4;
+}
+form{
+    width: 50%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
 
+/* Attribute selectors */
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+/* Pseudo elements with generated content */
+form::before{
+    content: "Let's get in touch!";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+/* User action pseudo class */
+input:focus, textarea:focus{
+     outline: none;
+     border-color: #15dc3d;
+}
+/* Child combinator */
+form > .formGroup{
+    margin-bottom: 1rem;
+}
 
+/* Structural selectors */
+.formGroup:first-child{
+    margin-top: 2rem;
+}
+
+/* negation pseudo class */
+input:not([type="submit"]){
+    background-color: #d3f1c1;
+}
+
+/* Nth pseudo class */
+/* .formGroup:nth-child(odd) {
+    background-color:  #f5f5f5;
+} */
+
+input:invalid, textarea:invalid{
+    border-color: red;
+
+}
 
 /* ---------------------------FOOTER-------------- */
 footer {
