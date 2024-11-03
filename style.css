@@ -468,10 +468,12 @@ aside{
     margin-left: 20px;
     border-radius: 5px;
     box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
+    /* height: 500px; */
 }
 
 article h2, h3{
     color: #444;
+    margin-bottom: 10px;
 }
 
 article img{
@@ -498,16 +500,64 @@ article .articleDate{
 aside ul{
     padding-left: 20px;
     list-style-type: none;
+    font-size: 20px;
+    
 }
 
 aside a{
-    color: #0066cc;
+    color: #042c55;
     text-decoration: none;
     transition: color 0.3s ease;
+    margin-top: 200px;
+}
+aside li{
+    margin-top: 30px;
 }
 aside a:hover{
     text-decoration: underline;
-    color: #235c04;
+    color: #000000;
+}
+aside h3:nth-of-type(1){
+    color: #372727;
+}
+
+aside h3:nth-of-type(2){
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.blog2Section{
+    background-color: #f4f4f4;
+}
+
+.blog2{
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.blog2 .blog2Img img{
+    width: 300px;
+    border-radius: 8px;
+}
+.blog2 .blog2Des{
+    padding: 20px;
+}
+.blog2Des p:nth-of-type(1) {
+    /* Your styles here */
+    font-size: 24px;
+    
+}
+.blog2 .blog2Des button{
+    margin: 30px;
 }
 
 
@@ -515,6 +565,7 @@ aside a:hover{
 #contactBody{
     background-color: #f4f4f4;
 }
+
 form{
     width: 50%;
     background-color: white;
@@ -741,6 +792,11 @@ footer {
         margin: 0; */
         padding-bottom: 280px;
     }
+
+    .blog2 {
+        width: 90%;
+        margin-top: -250px;
+    }
 }
 
 
@@ -854,6 +910,12 @@ footer {
     form, aside {
         width: 100%;
         margin-bottom: 2rem;
+    }
+    .blog2 {
+        display: block;
+    }
+    .blog2 .blog2Img img {
+        width: 300px;
     }
     
 }
