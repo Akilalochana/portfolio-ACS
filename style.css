@@ -154,7 +154,8 @@ header{
     margin-top: 150px;
     position: relative;
     animation-name: lightCircle;
-    animation-duration: 50s;
+    animation-duration: 3s;
+    animation-iteration-count: 30;
     /* animation: imgFloat 4s ease-in-out infinite; */
     
 }
@@ -176,30 +177,14 @@ header{
     height: auto;
 }
 
-@keyframes lightCircle{
-    0%   {background-color: rgb(151, 245, 19);}
-    5%  {background-color: rgb(239, 225, 20);}
-    10%  {background-color: rgb(245, 147, 49);}
-    15% {background-color: rgb(239, 56, 172);}
-    20% {background-color: rgb(1, 255, 1);}
-    25% {background-color: rgb(0, 203, 0);}
-    30% {background-color: rgb(0, 160, 0);}
-    35% {background-color: rgb(0, 99, 0);}
-    40% {background-color: rgb(94, 128, 0);}
-    45% {background-color: rgb(153, 187, 0);}
-    50% {background-color: rgb(234, 255, 0);}
-    55%   {background-color: rgb(186, 0, 0);}
-    60%  {background-color: rgb(192, 51, 0);}
-    65%  {background-color: rgb(208, 194, 0);}
-    70% {background-color: green;}
-    75% {background-color: rgb(1, 255, 1);}
-    80% {background-color: rgb(0, 203, 0);}
-    85% {background-color: rgb(0, 160, 0);}
-    90% {background-color: rgb(0, 99, 0);}
-    95% {background-color: rgb(94, 128, 0);}
-    100% {background-color: rgb(153, 187, 0);}
-  
+@keyframes lightCircle {
+    0%   {background-color: rgb(65, 215, 39);} /* Soft Peach */
+    25%  {background-color: rgb(72, 139, 17);} /* Light Coral */
+    50%  {background-color: rgb(189, 211, 44);} /* Light Purple */
+    75%  {background-color: rgb(105, 188, 22);} /* Sky Blue */
+    100% {background-color: rgb(65, 215, 39);} /* Soft Gray */
 }
+
 @keyframes imgFloat {
     50% {
         transform: translateY(10px);
@@ -207,16 +192,13 @@ header{
     }
 }
 
-
 /* -----------------------ABOUT----------------------------------------- */
-
 .aboutContainer{
     max-width: 1300px;
     margin: auto;
     padding: 120px 20px;
     display: flex;
     gap: 40px;
-
 }
 
 .profilePic{
@@ -620,6 +602,50 @@ aside h2{
     margin-bottom: 1.5rem;
 }
 
+/* animation mail icon */
+.mailIconDiv{
+    width: 80px;
+    height: 50px;
+    transform: rotate(20deg);
+    position: relative;
+    animation-name: mailIcons;
+    animation-duration: 10s;
+    animation-iteration-count: 10;
+}
+@keyframes mailIcons {
+    0%   {left:0px; top:0px;}
+    25%  {left:420px; top:0px;}
+    50%  {left:420px; top:100px;}
+    75%  {left:0px; top:100px;}
+    100% {left:0px; top:0px;}
+  }
+.mailIcon{
+    width: 80px;
+    height: 50px;
+    background-color: rgb(160, 129, 127);
+    border-radius: 4px;
+    border: 2px solid rgb(114, 91, 91) ;
+}
+.mailIcon1{
+    width: 5px;
+    height: 47px;
+    background-color: rgb(114, 91, 91);
+    border-radius: 4px;
+    transform: rotate(60deg);
+    margin-top: -60px;
+    margin-left: 57px;
+    
+}
+.mailIcon2{
+    width: 5px;
+    height: 47px;
+    background-color: rgb(114, 91, 91);
+    border-radius: 4px;
+    transform: rotate(120deg);
+    margin-top: -47px;
+    margin-left: 19px;
+}
+
 /*animations */
 @keyframes fadeIn{
     from{opacity: 0; transform: translateY(20px);}
@@ -644,7 +670,8 @@ footer {
     flex-direction: column;
     row-gap: 30px;
     padding-block: 40px 60px;
-    background: linear-gradient(90deg, #efefef 0%, #dcdbdb 99%, #e1e4e0 100%);
+    /* background: linear-gradient(90deg, #efefef 0%, #dcdbdb 99%, #e1e4e0 100%); */
+    background-image: linear-gradient(to bottom right, rgb(223, 255, 214), rgb(48, 140, 27),rgb(0, 0, 0));
 }
 
 .top-footer p {
@@ -785,11 +812,6 @@ footer {
         margin-top: -500px;
     }
     main{
-        /* flex: 2;
-        display: flex;
-        flex-direction: row;
-        min-height: 100vh;
-        margin: 0; */
         padding-bottom: 280px;
     }
 
@@ -797,6 +819,14 @@ footer {
         width: 90%;
         margin-top: -250px;
     }
+    /* animation */
+    @keyframes mailIcons {
+        0%   {left:0px; top:0px;}
+        25%  {left:230px; top:0px;}
+        50%  {left:230px; top:90px;}
+        75%  {left:0px; top:90px;}
+        100% {left:0px; top:0px;}
+      }
 }
 
 
@@ -916,6 +946,12 @@ footer {
     }
     .blog2 .blog2Img img {
         width: 300px;
+    }
+
+    /* animation */
+
+    .mailIconDiv {
+        display: none;
     }
     
 }
