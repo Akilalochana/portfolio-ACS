@@ -18,6 +18,16 @@ header{
     z-index: 1000;
     top: 0;
 }
+
+#menuIcon{
+    font-size: 35px;
+    color: #000000;
+    cursor: pointer;
+    z-index: 10001;
+    display: none; 
+}
+
+
 .myName{
     color: #000000;
 }
@@ -582,7 +592,6 @@ footer {
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
-    background: var(--extra-light);
     padding-block: 40px 60px;
     background: linear-gradient(90deg, #efefef 0%, #dcdbdb 99%, #e1e4e0 100%);
 }
@@ -618,6 +627,65 @@ footer {
 
 /* -------------------meadia------------------- */
 @media(max-width:821px){
+    #menuIcon{
+        font-size: 35px;
+        color: #000000;
+        cursor: pointer;
+        /* z-index: 10001; */
+        display: block; 
+    }
+
+    /* Initially hide the navLinks off-screen */
+    .navLinks {
+        position: absolute;
+        top: 100px;
+        right: -300px; /* Move off-screen */
+        width: 300px;
+        height: 35vh;
+        background: #89c874;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+        
+    }
+
+    .navLinks li a{
+        transition: .5s;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 40px;
+        color: #000000;
+        background-color:  #89c874;
+       
+    }
+
+    .navLinks li {
+        background-color:  #89c874;
+    }
+
+    .navLinks.open {
+        right: 10px; 
+    }
+
+    .navLinks a {
+        display: block;
+        margin: 22px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+        /* background: #000000; */
+
+    }
+
+    .navLinks a:hover {
+        color: #5fde45;
+        transform: translateY(5px);
+    }
+    
+    .navLinks a.active {
+        color: #54f448;
+    }
 
     .homePage{
         display: flex;
@@ -665,15 +733,35 @@ footer {
         width: 1200px;
         margin-top: -500px;
     }
+    main{
+        /* flex: 2;
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+        margin: 0; */
+        padding-bottom: 280px;
+    }
 }
 
+
 @media(max-width:668px){
+
+    .navLinks {
+        top: 85px;
+        width: 200px;    
+    }
+
+    .navLinks li a{
+        font-size: 20px;
+    }
+
+
     h1 {
         font-size: 1.4em;
     }
 
     header {
-        padding: 2px 50px;
+        padding: 20px 50px;
     }
 
     .homePage{
@@ -690,7 +778,6 @@ footer {
         height: 85vw;
         margin-left: 28px;
         margin-top: -920px;
-        
     }
     .homeImg .imgBox .imgItem img {
         width: 84vw;
@@ -704,7 +791,7 @@ footer {
     }
 
     .navLinks li a {
-       display: none;
+       /* display: none; */
     }
 
     .homeInfo p {

@@ -27,6 +27,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="bx bx-menu" id="menuIcon"></div>
     </header>
 
 
@@ -132,7 +133,15 @@
             </p>
         </div>
     </footer>
-    
+    <script>
+        let menu = document.querySelector('#menuIcon');
+        let navbar = document.querySelector('.navLinks');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
     
 </body>
 </html>

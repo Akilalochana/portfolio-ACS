@@ -27,6 +27,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="bx bx-menu" id="menuIcon"></div>
     </header>
 
     <main>
@@ -34,7 +35,7 @@
         <article>
             <h2>If a stone is thrown with a speed of 8 kms^-1, will it continuously revolve around the earth?😯 (Gravitational force)</h2>
             <div class="articleDate">
-                <span>May 16, 2024</span> | <span>2 min read</span>
+                <time>May 16, 2024</time> | <span>2 min read</span>
             </div>
             <img src="images/gravity.webp" alt="">
             <p>Would you believe me if I said this?</p>
@@ -151,7 +152,15 @@
             </p>
         </div>
     </footer>
-    
+    <script>
+        let menu = document.querySelector('#menuIcon');
+        let navbar = document.querySelector('.navLinks');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
     
 </body>
 </html>
