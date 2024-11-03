@@ -49,10 +49,6 @@ header{
 }
 
 /* ------------------HOME------------------ */
-/* section{
-    display: flex;
-} */
-
 .homePage{
     display: flex;
     flex-wrap: wrap;
@@ -150,16 +146,19 @@ header{
     animation-name: lightCircle;
     animation-duration: 50s;
     /* animation: imgFloat 4s ease-in-out infinite; */
+    
 }
 
 
 .homeImg .imgBox .imgItem img{
-    width: 452px;
+    /* width: 452px; */
+    width: 29.6vw;
+    height: 29.6vw;
     position: absolute;
     /* width: min(25rem, 90%); */
     border-radius: 100%;
-    margin-left: 5px;
-    margin-top: 6px;
+    margin-left: 4px;
+    margin-top: 2px;
     animation: imgFloat 4s ease-in-out infinite;
 }
 .resImg{
@@ -450,7 +449,7 @@ article{
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
 }
 aside{
     flex: 1;
@@ -458,7 +457,7 @@ aside{
     padding: 20px;
     margin-left: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
 }
 
 article h2, h3{
@@ -585,7 +584,7 @@ footer {
     row-gap: 30px;
     background: var(--extra-light);
     padding-block: 40px 60px;
-    background: rgb(246, 233, 211);
+    background: linear-gradient(90deg, #efefef 0%, #dcdbdb 99%, #e1e4e0 100%);
 }
 
 .top-footer p {
@@ -636,7 +635,8 @@ footer {
         margin-top: 150px;
     }
     .homeImg .imgBox .imgItem img {
-        width: 522px;
+        width: 64vw;
+        height: 64vw;
     }
     /* .profilImage {
         width: 100%;
@@ -668,6 +668,13 @@ footer {
 }
 
 @media(max-width:668px){
+    h1 {
+        font-size: 1.4em;
+    }
+
+    header {
+        padding: 2px 50px;
+    }
 
     .homePage{
         display: flex;
@@ -675,18 +682,19 @@ footer {
     }
 
     .homePageInfo {
-        margin-top: 500px;
+        margin-top: 390px;
     }
 
     .homeImg .imgBox {
         width: 85vw;
         height: 85vw;
         margin-left: 28px;
-        margin-top: -950px;
+        margin-top: -920px;
         
     }
     .homeImg .imgBox .imgItem img {
-        width: 315px;
+        width: 84vw;
+        height: 84vw;
         margin-left: 2px;
         margin-top: -1px;
     }
