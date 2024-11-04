@@ -6,7 +6,6 @@
     background-color: white;
 }
 
-
 header{
     display: flex;
     justify-content: space-between;
@@ -26,7 +25,6 @@ header{
     z-index: 10001;
     display: none; 
 }
-
 
 .myName{
     color: #000000;
@@ -51,8 +49,6 @@ header{
 .navLinks .active{
     color: #20cf43;
 }
-
-
 
 .navLinks li a:hover{
     color: #20cf43;
@@ -116,7 +112,6 @@ header{
     width: 70%;
 }
 
-
 .btnAndScl .socialMedia a {
     width: 50px;
     height: 50px;
@@ -143,8 +138,6 @@ header{
     background-color: transparent; /* Ensures icon background is transparent */
 }
 
-
-
 .homeImg .imgBox{
     width: 30vw;
     height: 30vw;
@@ -157,7 +150,6 @@ header{
     animation-duration: 3s;
     animation-iteration-count: 30;
     /* animation: imgFloat 4s ease-in-out infinite; */
-    
 }
 
 
@@ -277,7 +269,7 @@ header{
     margin-top: 20px;
 }
 .mySkills{
-    background-color: #7cf03d;
+    background-image: linear-gradient(to bottom right, rgb(59, 192, 6),rgb(21, 60, 1));
     color: #fff;
     padding: 5px 15px;
     border-radius: 20px;
@@ -332,10 +324,8 @@ header{
 .btnCertificate{
     display: inline-block;
     padding: 10px 30px;
-    /* background: #7cf03d; */
     border: 2px solid #7cf03d;
     border-radius: 40px;
-    /* box-shadow: 0 0 10px #7cf03d; */
     color: #1f242d;
     font-weight: 600;
     text-decoration: none;
@@ -346,7 +336,6 @@ header{
     background: transparent;
     background-color: #8ce75a;
 }
-
 
 /* ---------------------------------------------- */
 .projects{
@@ -365,7 +354,6 @@ header{
     gap: 30px;
     flex-wrap: wrap;
     padding: 0px 50px;
-
 }
 
 .projectBox{
@@ -391,6 +379,7 @@ header{
     left: 0;
     transition: transform 0.3s ease;
 }
+
 .projectBox:hover img{
     transform: scale(1.1);
 }
@@ -411,16 +400,24 @@ header{
     box-sizing: border-box;
 }
 
-.projectBox:hover .profileDetails{
+.projectBox:hover .projrctDetails {
     opacity: 1;
     bottom: 0;
 }
+
 .projectBox label{
     font-size: 15px;
-    color: #6b7280;
+    color: #ffffff;
+    background: transparent;
+}
+.projectBox h3{
+    background: transparent;
+    color: #ffffff;
 }
 
+
 /* -------------------------BOLG------- */
+
 #blogBody{
     background-color: #f4f4f4;
 }
@@ -536,7 +533,6 @@ aside h3:nth-of-type(2){
 .blog2Des p:nth-of-type(1) {
     /* Your styles here */
     font-size: 24px;
-    
 }
 .blog2 .blog2Des button{
     margin: 30px;
@@ -590,12 +586,10 @@ form > .formGroup{
 input:not([type="submit"]){
     background-color: #d3f1c1;
 }
+textarea{
+    background-color: #d3f1c1;
+}
 
-/* Nth pseudo class */
-/* .formGroup:nth-child(odd) {
-    background-color:  #f5f5f5;
-} */
- 
 /* transforms */
 aside h2{
     transform: skew(-8deg);
@@ -610,7 +604,7 @@ aside h2{
     position: relative;
     animation-name: mailIcons;
     animation-duration: 10s;
-    animation-iteration-count: 10;
+    animation-iteration-count: 15;
 }
 @keyframes mailIcons {
     0%   {left:0px; top:0px;}
@@ -661,46 +655,60 @@ aside li{
     color: #333;
 }
 
-
 /* ---------------------------FOOTER-------------- */
-footer {
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footerContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 30px;
-    padding-block: 40px 60px;
-    /* background: linear-gradient(90deg, #efefef 0%, #dcdbdb 99%, #e1e4e0 100%); */
-    background-image: linear-gradient(to bottom right, rgb(223, 255, 214), rgb(48, 140, 27),rgb(0, 0, 0));
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    background: transparent;
 }
 
-.top-footer p {
-    font-size: 20px;
-    font-weight: 600;
+.footerContainer div {   
+    flex: 1 1 200px;
+    margin: 10px;
+    background: transparent;
 }
 
-.middle-footer .footer-menu {
-    display: flex;
+.footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+    background: transparent;
 }
 
-.footer-menu-list {
-    list-style: none;
+.footer p, .footer a {
+    color: #ccc;
+    font-size: 0.9em;
+    text-decoration: none;
+    background: transparent;
 }
 
-.footer-menu-list a {
-    font-weight: 500;
-    margin-inline: 20px;
+.footer a:hover {
+    color: #ffd700;
+    text-decoration: underline;
 }
 
-.footer-social--icon {
-    display: flex;
-    gap: 30px;
+/* Footer Bottom */
+.footerBottom {
     text-align: center;
-    justify-content: center;
-    color: var(--primary-color-dark);
-
-
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 0.8em;
+    color: #aaa;
+    background: transparent;
 }
+
 
 
 /* -------------------meadia------------------- */
@@ -709,10 +717,8 @@ footer {
         font-size: 35px;
         color: #000000;
         cursor: pointer;
-        /* z-index: 10001; */
         display: block; 
     }
-
     /* Initially hide the navLinks off-screen */
     .navLinks {
         position: absolute;
@@ -726,7 +732,6 @@ footer {
         justify-content: flex-start;
         border-radius: 5px;
         transition: all 0.5s ease;
-        
     }
 
     .navLinks li a{
@@ -736,7 +741,6 @@ footer {
         font-size: 40px;
         color: #000000;
         background-color:  #89c874;
-       
     }
 
     .navLinks li {
@@ -752,8 +756,6 @@ footer {
         margin: 22px 0;
         padding: 0px 25px;
         transition: all .50s ease;
-        /* background: #000000; */
-
     }
 
     .navLinks a:hover {
@@ -784,11 +786,6 @@ footer {
         width: 64vw;
         height: 64vw;
     }
-    /* .profilImage {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    } */
 
     .aboutContainer {
         max-width: 1000px;
@@ -828,7 +825,6 @@ footer {
         100% {left:0px; top:0px;}
       }
 }
-
 
 @media(max-width:668px){
 
@@ -896,7 +892,6 @@ footer {
         width: 90%;
     }
 
-
 /* -------------------ABOUT------------- */
     .aboutContainer {
         max-width: 500px;
@@ -920,14 +915,24 @@ footer {
         width:250px;
         }
 
-    .projectContainer {
-        display: flex;
-        /* width: 100%; */
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-        padding: 0px 50px;
-    }
+       
+            .projectContainer {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px; /* Reduce gap for smaller screens */
+                padding: 0;
+            }
+        
+            .projectBox {
+                width: 80%; /* Make project boxes narrower for smaller screens */
+            }
+        
+            .projectTitle {
+                font-size: 32px; /* Adjust title font size for better readability */
+            }
+     
+
+
 
     /* ----------BLOG-------- */
     main{
