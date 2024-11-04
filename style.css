@@ -596,6 +596,14 @@ aside h2{
     margin-bottom: 1.5rem;
 }
 
+/* Validity pseudo class */
+input:invalid {
+    border-color: #d51c1c;
+}
+input:valid {
+    border-color: rgb(63, 255, 63);
+}
+
 /* animation mail icon */
 .mailIconDiv{
     width: 80px;
